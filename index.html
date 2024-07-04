@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
 
 <head>
@@ -49,25 +49,25 @@
             <div class="search-bar col-md-6 mx-auto">
                 <h1 class="text-center">Hard Rock Lyric Search</h1>
                 <div class="search-box my-5">
-                    <input type="text" class="form-control" placeholder="Enter your artist song name">
-                    <button class="btn btn-success search-btn">Search</button>
+                    <input type="text" id="song_name" class="form-control" placeholder="Enter your artist song name">
+                    <button class="btn btn-success search-btn" onclick="suggestionsSongList()">Search</button>
                 </div>
             </div>
             <!-- Single Lyrics -->
-            <div class="single-lyrics text-center">
+            <div class="single-lyrics text-wrap" style="width: 30rem" id="full_lyrics">
 
             </div>
             <div class="search-result col-md-8 mx-auto py-4">
-                <div class="single-result row align-items-center my-3 p-3">
-                    <div class="col-md-9">
+                <div class="single-result row align-items-center my-3 p-3" id="suggestionsSongListField">
+                    <!-- <div class="col-md-9">
                         <h3 class="lyrics-name">Purple Noon</h3>
                         <p class="author lead">Album by <span>Washed Out</span></p>
-                    </div>
-                    <div class="col-md-3 text-md-right text-center">
-                        <button class="btn btn-success">Get Lyrics</button>
-                    </div>
+                   </div>
+                   <div class="col-md-3 text-md-right text-center">
+                       <button class="btn btn-success">Get Lyrics</button>
+                   </div> -->
                 </div>
-            </div>
+            </div> 
         </main>
     </div>
     <!-- Optional JavaScript -->
@@ -76,6 +76,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Custom Script Here -->
+     <script src="script.js"></script>
 
 </body>
 
